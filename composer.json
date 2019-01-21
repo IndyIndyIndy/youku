@@ -1,0 +1,37 @@
+{
+    "name": "christianessl/youku",
+    "type": "typo3-cms-extension",
+    "description": "Online media provider for youku.com, chinas alternative to youtube.",
+    "keywords": [
+        "TYPO3",
+        "extension",
+        "youku",
+        "online media helper",
+        "video",
+        "fal"
+    ],
+    "authors": [
+        {
+            "name": "Christian Essl",
+            "role": "Developer"
+        }
+    ],
+    "version": "1.0.0",
+    "require": {
+        "typo3/cms-core": "^8.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "ChristianEssl\\Youku\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ChristianEssl\\Youku\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "youku": "self.version",
+        "typo3-ter/youku": "self.version"
+    }
+}
