@@ -144,7 +144,7 @@ class YoukuRenderer implements FileRendererInterface
         $urlParams[] = 'byline=' . (int)!empty($options['showinfo']);
         $urlParams[] = 'portrait=0';
 
-        return sprintf('http://player.youku.com/embed/%s?%s', $videoId, implode('&amp;', $urlParams));
+        return sprintf('https://player.youku.com/embed/%s?%s', $videoId, implode('&amp;', $urlParams));
     }
 
     /**
