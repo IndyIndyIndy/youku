@@ -114,6 +114,7 @@ class YoukuHelper extends AbstractOEmbedHelper
         );
 
         $doc = new \DOMDocument();
+        libxml_use_internal_errors(true);
         $doc->loadHTML($html);
 
         $title = 'Youku Video'; // Default value
