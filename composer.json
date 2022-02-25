@@ -17,7 +17,11 @@
             "role": "Developer"
         }
     ],
-    "version": "1.2.0",
+    "extra": {
+      "typo3/cms": {
+        "extension-key": "youku"
+      }
+    },
     "require": {
         "typo3/cms-core": "^8.7.0 || ^9.5.0 || ^10.4.0"
     },
