@@ -3,7 +3,7 @@
 defined('TYPO3_MODE') || die('Access denied.');
 
 call_user_func(
-    function ($extKey) {
+    function () {
         // Register file extension "youku"
         $GLOBALS['TYPO3_CONF_VARS']['SYS']['mediafile_ext'] .= ',youku';
 
@@ -17,6 +17,5 @@ call_user_func(
         // Register the renderer for the frontend
         $rendererRegistry = \TYPO3\CMS\Core\Resource\Rendering\RendererRegistry::getInstance();
         $rendererRegistry->registerRendererClass(\ChristianEssl\Youku\Resource\Rendering\YoukuRenderer::class);
-    },
-    $_EXTKEY
+    }
 );

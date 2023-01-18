@@ -53,7 +53,7 @@ class YoukuHelper extends AbstractOEmbedHelper
 
         if (!file_exists($temporaryFileName)) {
             $oEmbedData = $this->getOEmbedData($videoId);
-            $previewImage = GeneralUtility::getUrl($oEmbedData['thumbnail_url']);
+            $previewImage = $oEmbedData['thumbnail_url'] ? GeneralUtility::getUrl($oEmbedData['thumbnail_url']) : false;
 
             if ($previewImage !== false) {
                 file_put_contents($temporaryFileName, $previewImage);
